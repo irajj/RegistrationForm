@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <!-- External Css link -->
+    <link rel="stylesheet" href="Reg_form.css">
+</head>
+
+<body>
+    <!-- container part start -->
+    <div class="container">
+        <!-- header part start -->
+        <header>
+            <h1>STUDENT REGISTRATION FORM</h1>
+        </header>
+        <!-- header part end -->
+        <!-- Registration form Start -->
+        <form action="" method="get">
+            <!-- table of regform start -->
+            <table>
+                <!-- (1) -->
+                <tr>
+                    <td class="column1">
+                        <label ID="F_name" for="F_name">First Name-:</label>
+                    </td>
+                    <td>
+                        <input ID="F_name_tb" type="text" placeholder="Enter First Name" required="" min="3"
+                            maxlength="30" pattern="[a-zA-Z]{2,30}"  title="Numeric value not allowed">
+                        <label ID="fnlbl" for="">(max 30 chars)</label>
+                    </td>
+                </tr>
+                <tr>
+                    <!-- (2) -->
+                    <td class="column1">
+                        <label ID="L_name" for="L_name">Last Name-:</label>
+                    </td>
+                    <td>
+                        <input ID="L_name_tb" type="text" placeholder="Enter Last Name" required="" minlength="2" maxlength="30" pattern="[a-zA-Z]{2,30}" title="Numeric value not allowed">
+                        <label ID="lnlbl" for="">(max 30 chars)</label>
+                    </td>
+                </tr>
+                <!-- (3) -->
+                <tr>
+                    <td class="column1">
+                        <label ID="D_ob" for="DOB">Date of birth-:</label>
+                    </td>
+                    <td>
+                        <input ID="D_Tb" type="date" required="">
+                    </td>
+                </tr>
+                <!-- (4) -->
+                <tr>
+                    <td class="column1">
+                        <label ID="EML_add" for="e_Mail">Email id-:</label>
+                    </td>
+                    <td>
+                        <input ID="Mail_tb" type="email" placeholder="Enter your Email address" required="">
+                        <label ID="maillbl" for="">Must be valid email</label>
+                    </td>
+                </tr>
+                <!-- (5) -->
+                <tr>
+                    <td class="column1">
+                        <label ID="GEN" for="Adr">gender-:</label>
+                    </td>
+                    <td>
+                        <input ID="M_gen" type="radio" id="male" name="gender" value="Male" required>Male
+                        <input ID="F_gen" type="radio" id="female" name="gender" value="Female">Female
+                    </td>
+                </tr>
+                <!-- (6) -->
+                <tr>
+                    <td class="column1">
+                        <label ID="add_name" for="Adr">Address-:</label>
+                    </td>
+                    <td>
+                        <textarea ID="ADD_TARea" name="Red_add" class="iPwC3Em" id="SR_add" cols="40" rows="5"
+                            placeholder="Enter your address here" required=""></textarea>
+                    </td>
+                </tr>
+                <!-- (7) -->
+                <tr>
+                    <td class="column1">
+                        <label ID="ct_name" for="cT">City-:</label>
+                    </td>
+                    <td>
+                        <select ID="ct_slct" class="iPwC3Em" id="" required>
+                            <option value="">Select city</option>
+                            <option value="Ahmedabad">Ahmedabad</option>
+                            <option value="Himmatnagar">Himmatnagar</option>
+                            <option value="Gandhinagar">Gandhinagar</option>
+                            <option value="Prantij">Prantij</option>
+                        </select>
+                    </td>
+                </tr>
+                <!-- (8) -->
+                <tr>
+                    <td class="column1">
+                        <label ID="pin_name" for="pc">Pincode-:</label>
+                    </td>
+                    <td>
+                        <input ID="Pin_tb" type="text" placeholder="Enter 6 digit" required="" pattern="[0-9]{6,6}" title="Do not enter above six digits">
+                    </td>
+                </tr>
+                <!-- (9) -->
+                <tr>
+                    <td class="column1">
+                        <label ID="CN_tb" for="C_num">Contact Number-:</label>
+                    </td>
+                    <td>
+                        <select ID="con_ctry" size="3" required="">
+                            <option value="+90" title="Turkey">+90</option>
+                            <option value="+91" title="India">+91</option>
+                            <option value="+91" title="pakistan">+92</option>
+                            <option value="+93" title="Afghanistan">+93</option>
+                            <option value="+94" title="sri lanka">+94</option>
+                            <option value="+95" title="Myanmar">+95</option>
+                            <option value="+974" title="qatar">+974</option>
+                            <option value="+971" title="United Arab Emirates">+971</option>
+                            <option value="+973" title="Bahrain">+973</option>
+                            <option value="+966" title="Saudi Arabia">+966</option>
+                        </select>
+                        <input ID="MOB_tb" type="text" name="" id="" placeholder="Enter your number here" required="" pattern="[0-9]{10,13}" title="enetr a valid number">
+                    </td>
+                </tr>
+                <!-- (10) -->
+                <tr>
+                    <td class="column1">
+                        <label ID="HOB_NAME" for="Hb">Hobbies-:</label>
+                    </td>
+                    <td>
+                        <input ID="HOB1_chb" type="checkbox"><label for="">Drawing</label>
+                        <input ID="HOB2_chb" type="checkbox"><label for="">Singing</label>
+                        <input ID="HOB3_chb" type="checkbox"><label for="">dancing</label>
+                    </td>
+                </tr>
+                <!-- (11) -->
+                <tr>
+                    <td class="column1">
+                        <label ID="CAF_name" for="C_Appl">Course applied for-:</label>
+                    </td>
+                    <td>
+                        <input ID="DEG1_radbtn" type="radio" name="degree" id="" value="BCA" required><label
+                            for="">BCA</label>
+                        <input ID="DEG2_radbtn" type="radio" name="degree" id="" value="MCA"><label for="">MCA</label>
+                        <input ID="DEG3_radbtn" type="radio" name="degree" id="" value="PGDCA"><label
+                            for="">PGDCA</label>
+                        <input ID="DEG4_radbtn" type="radio" name="degree" id="" value="others"><label
+                            for="">Others</label>
+                    </td>
+                </tr>
+                <!-- (12) -->
+                <tr>
+                    <td class="column1">
+                        <label ID="REG_DT_name" for="RDATE">Registraton Date and time-:</label>
+                    </td>
+                    <td>
+                        <input ID="DT_TB" type="datetime-local" name="" id="" required>
+                    </td>
+                </tr>
+                <!-- (13) -->
+                <tr>
+                    <td colspan="2">
+                        <button ID="sbt_btn" type="submit">SUBMIT</button>
+                        <button ID="tst_btn" type="reset">RESET</button>
+                    </td>
+                </tr>
+            </table>
+            <!-- table of regform End -->
+        </form>
+        <!-- Registration form End-->
+    </div>
+    <!-- container part End -->
+</body>
+
+</html>

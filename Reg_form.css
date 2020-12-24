@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500&display=swap');
+/* Reset css */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+body{
+    background: linear-gradient(90deg,
+    rgb(53, 53, 216),
+    rgb(3, 183, 255));
+}
+/* header */
+header h1{
+    text-align: center;
+    text-decoration: underline;
+    color: #051c42;
+}
+
+/* table insidee the container tag */
+.container table{
+    padding-right: 150px;
+    margin: auto;
+    height: 100%;
+}
+/* Editing part inside the table */
+
+/* placeholder color of all inputs */
+input::placeholder{
+    color: black;
+    font-size: 15px;
+}
+/* this for all the first td  taginside the tr tag */
+.column1{
+    text-align: right;
+    padding-right: 10px;
+}
+
+/* input part (text,date,email,date-timelocal) */
+.container table input[type="text"],[type="date"],[type="datetime-local"]{
+    font-size: 16px;
+    width: 75%;
+    padding: 5px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid black;
+}
+.container table input[type="email"]{
+    font-size: 16px;
+    width: 69%;
+    padding: 5px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+/* input type hover effect */
+.container table input[type="text"]:hover{
+    font-size: 16px;
+    width: 75%;
+    padding: 5px;
+    background: none;
+    border: none;
+    border-bottom: 3px solid black;
+}
+.container table input[type="email"]:hover{
+    font-size: 16px;
+    width: 69%;
+    padding: 5px;
+    background: none;
+    border: none;
+    border-bottom: 3px solid black;
+}
+.container table input[type="date"]:hover{
+    font-size: 16px;
+    width: 75%;
+    padding: 5px;
+    background: none;
+    border: none;
+    border-bottom: 3px solid black;
+}
+.container table input[type="datetime-local"]:hover{
+    font-size: 16px;
+    width: 75%;
+    padding: 5px;
+    background: none;
+    border: none;
+    border-bottom: 3px solid black;
+}
+
+/* input type focus effect */
+.container table input[type="text"]:focus{
+    font-size: 16px;
+    width: 75%;
+    padding: 5px;
+    background: none;
+    border: none;
+    outline:0;
+    border-bottom: 2px solid red ;
+    box-shadow: 0 1px 0 0 #d50000;
+}
+.container table input[type="email"]:focus{
+    font-size: 16px;
+    width: 69%;
+    padding: 6px;
+    background: none;
+    border: none;
+    outline:0;
+    border-bottom: 2px solid red ;
+    box-shadow: 0 1px 0 0 #d50000;
+}
+.container table input[type="date"]:focus{
+    font-size: 16px;
+    width: 75%;
+    padding: 5px;
+    background: none;
+    border: none;
+    outline:0;
+    border-bottom: 2px solid red;
+    box-shadow: 0 1px 0 0 #d50000;
+}
+/* textare and select focus*/
+.iPwC3Em:focus{
+    outline: none;
+}
+
+/* for datetime-local */
+.container table input[type="datetime-local"]:focus{
+    font-size: 16px;
+    width: 75%;
+    padding: 5px;
+    background: none;
+    border: none;
+    outline:0;
+    border-bottom: 2px solid red;
+    box-shadow: 0 1px 0 0 #d50000;
+}
+
+/* Mobile number child */
+.container table input[type="text"]:nth-child(2){
+    width: 54%;
+}
+
+/* radio btn and checkbox */
+.container table input[type="radio"],[type="checkbox"]{
+    margin: 4px;
+}
+
+/* textare and select */
+.iPwC3Em{
+    width: 75%;
+    padding: 5px;
+    margin-bottom: 3px;
+    border: none;
+}
+
+
+/* input type button */
+.container table tr:nth-last-child(1){
+    text-align: center;        
+}
+/* y and  x padding */
+.container table button{
+     padding: 0 80px;
+}
+/* submit btn */
+.container table button{
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 16px;
+}
+.container table button[type="submit"]{
+    margin: 10px 200px;
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+}
+.container table button[type="reset"]{
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+/* when cursor on the btn hover effect */
+.container table button:hover{
+    cursor: pointer;
+    background: linear-gradient(90deg,
+                    rgb(53, 53, 216),
+                    rgb(3, 183, 255));
+    border-radius: 10px;
+}
+
+
+/* focus effect btns */
+.container table button:focus{
+    outline: none;
+    cursor: pointer;
+    background: linear-gradient(90deg,
+                    rgb(53, 53, 216),
+                    rgb(3, 183, 255));
+    border-radius: 10px;
+}
+
